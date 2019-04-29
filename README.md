@@ -63,18 +63,32 @@ Through this app, users will be able to see various news articles about what is 
    * => Home Screen
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
 <img src="https://i.imgur.com/yYWRlbE.png" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
 
-## Schema 
-[This section will be completed in Unit 9]
+## Schema
 ### Models
-[Add table of models]
-### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+ | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | headline      | String   | Headline for story |
+   | author        | String   | story author |
+   | image         | File     | image that accompanies story |
+   | caption       | String   | story caption  |
+   | createdAt     | DateTime | date when post is created (default field) |
+   | (bonus)saved  | Boolean  | Whether post has been saved by user |
+   
+###Networking
+  Google News API
+    - Base URL: newsapi.org/v2
+      
+   | HTTP Verb | Endpoint | Description |
+  | ----------|----------|------------ |
+   | `GET`    | /top-headlines | gets top headlines |
+   | `GET`    | /top-headlines?q=keyword | returns top headlines with keyword |
+
+
+
