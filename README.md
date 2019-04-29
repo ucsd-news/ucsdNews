@@ -79,7 +79,7 @@ Through this app, users will be able to see various news articles about what is 
    
 ### Networking
 
-  # Google News API
+  #### Google News API
     - Base URL: newsapi.org/v2
       
    | HTTP Verb | Endpoint | Description |
