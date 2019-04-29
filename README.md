@@ -18,7 +18,7 @@ Through this app, users will be able to see various news articles about what is 
 - **Market:** Marketed towards UCSD students, alumni, and incoming freshman, this app would be catering to a niche market.  There would also be potential to broaden the scope and include other UC campuses within our app to scale our idea up
 - **Habit:**  By using push-notifications for important news stories, we can anticipate that users see the app and open it at least once per week.
 - **Scope:**  The Scope of this project is not large.  There is a lot of potential to create a working prototype for this app, then build on it if we have more time. 
-- 
+
 ## Product Spec
 
 ### 1. User Stories (Required and Optional)
@@ -65,10 +65,6 @@ Through this app, users will be able to see various news articles about what is 
 ## Wireframes
 <img src="https://i.imgur.com/yYWRlbE.png" width=600>
 
-### [BONUS] Digital Wireframes & Mockups
-
-### [BONUS] Interactive Prototype
-
 ## Schema
 ### Models
 
@@ -81,8 +77,9 @@ Through this app, users will be able to see various news articles about what is 
    | createdAt     | DateTime | date when post is created (default field) |
    | (bonus)saved  | Boolean  | Whether post has been saved by user |
    
-###Networking
-  Google News API
+### Networking
+
+  # Google News API
     - Base URL: newsapi.org/v2
       
    | HTTP Verb | Endpoint | Description |
