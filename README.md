@@ -25,8 +25,9 @@ Through this app, users will be able to see various news articles about what is 
 
 **Required Must-have Stories**
 
-* User can view list of stories 
-* User can choose between different departments
+* User can view list of popular news articles featuring UCSD 
+* User can choose to filter stories based on department
+* User can tap on a news article to view full story
 
 
 **Optional Nice-to-have Stories**
