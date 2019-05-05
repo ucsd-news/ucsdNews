@@ -35,7 +35,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WC9-d6-kaO">
-                                <rect key="frame" x="137" y="365" width="101" height="66"/>
+                                <rect key="frame" x="253" y="345" width="106" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
                                 <state key="normal" title="Search News"/>
@@ -43,8 +43,13 @@
                                     <action selector="searchNewsButton:" destination="Sv3-yh-Eny" eventType="touchUpInside" id="GJK-0o-gkn"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ot4-aS-6HV">
+                                <rect key="frame" x="0.0" y="345" width="287" height="159"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Pz1-fD-2Z0" firstAttribute="bottom" secondItem="0iN-jH-Adf" secondAttribute="bottom" constant="415" id="MDf-aZ-B08"/>
                             <constraint firstItem="Pz1-fD-2Z0" firstAttribute="trailing" secondItem="0iN-jH-Adf" secondAttribute="trailing" constant="103" id="X5a-nZ-FZZ"/>
@@ -55,6 +60,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="N9r-Qp-fvF"/>
                     <connections>
+                        <outlet property="newsPicker" destination="ot4-aS-6HV" id="23M-No-ulE"/>
                         <outlet property="newsTextField" destination="F6R-80-pjk" id="RUy-Pf-0YV"/>
                     </connections>
                 </viewController>

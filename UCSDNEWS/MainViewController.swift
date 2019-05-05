@@ -13,11 +13,11 @@ class MainViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     
     @IBOutlet weak var newsTextField: UITextField!
+    @IBOutlet weak var newsPicker: UIPickerView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let newsPicker = UIPickerView()
         
         newsTextField.inputView = newsPicker
         newsPicker.delegate = self
@@ -26,6 +26,9 @@ class MainViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         // Do any additional setup after loading the view.
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 
     
     @IBAction func searchNewsButton(_ sender: Any) {
@@ -40,14 +43,27 @@ class MainViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        self.view.endEditing(true)
         return newsSources[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         self.newsTextField.text = newsSources[row]
-        
-        
+        self.newsPicker.isHidden = true
+    
     }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        
+        if textField == self.newsTextField {
+            self.newsPicker.isHidden = false
+            //if you don't want the users to se the keyboard type:
+            
+            textField.endEditing(true)
+        }
+    }
+    
+   
     
     /*
     // MARK: - Navigation
