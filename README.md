@@ -90,3 +90,12 @@ Through this app, users will be able to see various news articles about what is 
 
 
 
+### Milestone 1
+
+[X] Created spinner object
+
+
+<img src="https://imgur.com/jYjqrCY.gif" width=400>
+
+
+
