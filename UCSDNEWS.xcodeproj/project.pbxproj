@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C282BC122855902005E976C /* MYRIADPRO-SEMIBOLDIT.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 6C282BBF228558C8005E976C /* MYRIADPRO-SEMIBOLDIT.OTF */; };
+		6C282BC322855902005E976C /* MYRIADPRO-BOLD.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 6C282BB6228558BB005E976C /* MYRIADPRO-BOLD.OTF */; };
+		6C282BC422855902005E976C /* MYRIADPRO-BOLDCOND.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 6C282BB7228558BB005E976C /* MYRIADPRO-BOLDCOND.OTF */; };
+		6C282BC522855902005E976C /* MYRIADPRO-BOLDCONDIT.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 6C282BBE228558BC005E976C /* MYRIADPRO-BOLDCONDIT.OTF */; };
+		6C282BC622855902005E976C /* MYRIADPRO-BOLDIT.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 6C282BB8228558BB005E976C /* MYRIADPRO-BOLDIT.OTF */; };
+		6C282BC722855902005E976C /* MYRIADPRO-COND.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 6C282BB9228558BB005E976C /* MYRIADPRO-COND.OTF */; };
+		6C282BC822855902005E976C /* MYRIADPRO-CONDIT.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 6C282BBA228558BB005E976C /* MYRIADPRO-CONDIT.OTF */; };
+		6C282BC922855902005E976C /* MyriadPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6C282BBB228558BB005E976C /* MyriadPro-Light.otf */; };
+		6C282BCA22855902005E976C /* MYRIADPRO-REGULAR.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 6C282BBC228558BB005E976C /* MYRIADPRO-REGULAR.OTF */; };
+		6C282BCB22855902005E976C /* MYRIADPRO-SEMIBOLD.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 6C282BBD228558BB005E976C /* MYRIADPRO-SEMIBOLD.OTF */; };
 		6C66E86C01D61D44504BA961 /* Pods_UCSDNEWSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C85154928DB064353005B80 /* Pods_UCSDNEWSTests.framework */; };
 		7C22E16250D6527E3E7D87A0 /* Pods_UCSDNEWSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A34753A4AEFA94D8C848EC8 /* Pods_UCSDNEWSUITests.framework */; };
 		BD03AD4B19A0DAC22B40CF29 /* Pods_UCSDNEWS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417D2BB3409EF7A6F8A42539 /* Pods_UCSDNEWS.framework */; };
@@ -43,6 +53,16 @@
 		55DD9BD0B5F6DE4A5363D4A8 /* Pods-UCSDNEWS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCSDNEWS.release.xcconfig"; path = "Target Support Files/Pods-UCSDNEWS/Pods-UCSDNEWS.release.xcconfig"; sourceTree = "<group>"; };
 		693440B1BB5874596A7FE8E7 /* Pods-UCSDNEWSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCSDNEWSUITests.debug.xcconfig"; path = "Target Support Files/Pods-UCSDNEWSUITests/Pods-UCSDNEWSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A34753A4AEFA94D8C848EC8 /* Pods_UCSDNEWSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UCSDNEWSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C282BB6228558BB005E976C /* MYRIADPRO-BOLD.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MYRIADPRO-BOLD.OTF"; sourceTree = "<group>"; };
+		6C282BB7228558BB005E976C /* MYRIADPRO-BOLDCOND.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MYRIADPRO-BOLDCOND.OTF"; sourceTree = "<group>"; };
+		6C282BB8228558BB005E976C /* MYRIADPRO-BOLDIT.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MYRIADPRO-BOLDIT.OTF"; sourceTree = "<group>"; };
+		6C282BB9228558BB005E976C /* MYRIADPRO-COND.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MYRIADPRO-COND.OTF"; sourceTree = "<group>"; };
+		6C282BBA228558BB005E976C /* MYRIADPRO-CONDIT.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MYRIADPRO-CONDIT.OTF"; sourceTree = "<group>"; };
+		6C282BBB228558BB005E976C /* MyriadPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Light.otf"; sourceTree = "<group>"; };
+		6C282BBC228558BB005E976C /* MYRIADPRO-REGULAR.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MYRIADPRO-REGULAR.OTF"; sourceTree = "<group>"; };
+		6C282BBD228558BB005E976C /* MYRIADPRO-SEMIBOLD.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MYRIADPRO-SEMIBOLD.OTF"; sourceTree = "<group>"; };
+		6C282BBE228558BC005E976C /* MYRIADPRO-BOLDCONDIT.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MYRIADPRO-BOLDCONDIT.OTF"; sourceTree = "<group>"; };
+		6C282BBF228558C8005E976C /* MYRIADPRO-SEMIBOLDIT.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MYRIADPRO-SEMIBOLDIT.OTF"; sourceTree = "<group>"; };
 		7466E45BE8E0816CD6143B64 /* Pods-UCSDNEWSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCSDNEWSTests.debug.xcconfig"; path = "Target Support Files/Pods-UCSDNEWSTests/Pods-UCSDNEWSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C0940228234E4782B16AFFE /* Pods-UCSDNEWSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCSDNEWSUITests.release.xcconfig"; path = "Target Support Files/Pods-UCSDNEWSUITests/Pods-UCSDNEWSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EE0A53DD227E64A6000507CC /* UCSDNEWS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCSDNEWS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,8 +119,24 @@
 				693440B1BB5874596A7FE8E7 /* Pods-UCSDNEWSUITests.debug.xcconfig */,
 				9C0940228234E4782B16AFFE /* Pods-UCSDNEWSUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		6C282BB5228558B2005E976C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6C282BBF228558C8005E976C /* MYRIADPRO-SEMIBOLDIT.OTF */,
+				6C282BB6228558BB005E976C /* MYRIADPRO-BOLD.OTF */,
+				6C282BB7228558BB005E976C /* MYRIADPRO-BOLDCOND.OTF */,
+				6C282BBE228558BC005E976C /* MYRIADPRO-BOLDCONDIT.OTF */,
+				6C282BB8228558BB005E976C /* MYRIADPRO-BOLDIT.OTF */,
+				6C282BB9228558BB005E976C /* MYRIADPRO-COND.OTF */,
+				6C282BBA228558BB005E976C /* MYRIADPRO-CONDIT.OTF */,
+				6C282BBB228558BB005E976C /* MyriadPro-Light.otf */,
+				6C282BBC228558BB005E976C /* MYRIADPRO-REGULAR.OTF */,
+				6C282BBD228558BB005E976C /* MYRIADPRO-SEMIBOLD.OTF */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		937A693611F8ED9C93C1159A /* Frameworks */ = {
@@ -116,6 +152,7 @@
 		EE0A53D4227E64A6000507CC = {
 			isa = PBXGroup;
 			children = (
+				6C282BB5228558B2005E976C /* Fonts */,
 				EE0A53DF227E64A6000507CC /* UCSDNEWS */,
 				EE0A53F4227E64AA000507CC /* UCSDNEWSTests */,
 				EE0A53FF227E64AA000507CC /* UCSDNEWSUITests */,
@@ -273,9 +310,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C282BC822855902005E976C /* MYRIADPRO-CONDIT.OTF in Resources */,
+				6C282BC322855902005E976C /* MYRIADPRO-BOLD.OTF in Resources */,
+				6C282BC922855902005E976C /* MyriadPro-Light.otf in Resources */,
+				6C282BC422855902005E976C /* MYRIADPRO-BOLDCOND.OTF in Resources */,
 				EE0A53EB227E64A9000507CC /* LaunchScreen.storyboard in Resources */,
+				6C282BCB22855902005E976C /* MYRIADPRO-SEMIBOLD.OTF in Resources */,
 				EE0A53E8227E64A9000507CC /* Assets.xcassets in Resources */,
+				6C282BC522855902005E976C /* MYRIADPRO-BOLDCONDIT.OTF in Resources */,
+				6C282BCA22855902005E976C /* MYRIADPRO-REGULAR.OTF in Resources */,
 				EE0A53E6227E64A6000507CC /* Main.storyboard in Resources */,
+				6C282BC622855902005E976C /* MYRIADPRO-BOLDIT.OTF in Resources */,
+				6C282BC122855902005E976C /* MYRIADPRO-SEMIBOLDIT.OTF in Resources */,
+				6C282BC722855902005E976C /* MYRIADPRO-COND.OTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,6 +22,9 @@ class MainViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         newsTextField.inputView = newsPicker
         newsPicker.delegate = self
         newsPicker.dataSource = self
+        
+        
+        
 
         // Do any additional setup after loading the view.
     }
