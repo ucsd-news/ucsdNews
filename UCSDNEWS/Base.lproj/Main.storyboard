@@ -23,57 +23,151 @@
             <objects>
                 <viewController id="Sv3-yh-Eny" customClass="MainViewController" customModule="UCSDNEWS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HyC-pY-ZCN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Pick your news...." borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F6R-80-pjk">
-                                <rect key="frame" x="16" y="318" width="343" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="newsTextField:" destination="Sv3-yh-Eny" eventType="editingDidEnd" id="xg9-k2-8Wu"/>
-                                </connections>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WC9-d6-kaO">
-                                <rect key="frame" x="253" y="345" width="106" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
-                                <state key="normal" title="Search News"/>
-                                <connections>
-                                    <action selector="searchNewsButton:" destination="Sv3-yh-Eny" eventType="touchUpInside" id="GJK-0o-gkn"/>
-                                </connections>
-                            </button>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ot4-aS-6HV">
-                                <rect key="frame" x="0.0" y="345" width="287" height="159"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UCSD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iN-jH-Adf">
-                                <rect key="frame" x="-21" y="118" width="313" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mu-jT-gj2">
+                                <rect key="frame" x="198.5" y="118" width="96" height="42"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="42"/>
+                                <color key="textColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UCSD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iN-jH-Adf">
+                                <rect key="frame" x="64.5" y="118" width="126" height="50"/>
                                 <color key="tintColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="50"/>
                                 <color key="textColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mu-jT-gj2">
-                                <rect key="frame" x="211" y="138" width="96" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="42"/>
-                                <color key="textColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1b7-CZ-dJY">
+                                <rect key="frame" x="0.0" y="176" width="375" height="824"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oe4-VA-x5B">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tI0-fD-z1b">
+                                                <rect key="frame" x="92" y="100" width="191" height="47"/>
+                                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="35"/>
+                                                <state key="normal" title="Engineering">
+                                                    <color key="titleColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cx4-hW-26W">
+                                                <rect key="frame" x="50" y="167" width="275" height="47"/>
+                                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="35"/>
+                                                <state key="normal" title="Cognitive Science">
+                                                    <color key="titleColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bu-ab-lHG">
+                                                <rect key="frame" x="127.5" y="234" width="120" height="47"/>
+                                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="35"/>
+                                                <state key="normal" title="Biology">
+                                                    <color key="titleColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUB-Q9-Av7">
+                                                <rect key="frame" x="107.5" y="301" width="160" height="47"/>
+                                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="35"/>
+                                                <state key="normal" title="Chemistry">
+                                                    <color key="titleColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvV-9f-zee">
+                                                <rect key="frame" x="142" y="368" width="91" height="47"/>
+                                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="35"/>
+                                                <state key="normal" title="Music">
+                                                    <color key="titleColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxJ-EX-BuG">
+                                                <rect key="frame" x="86.5" y="435" width="202" height="47"/>
+                                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="35"/>
+                                                <state key="normal" title="Mathematics">
+                                                    <color key="titleColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lw3-G9-aXU">
+                                                <rect key="frame" x="45" y="33" width="285" height="47"/>
+                                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="35"/>
+                                                <state key="normal" title="Computer-Science">
+                                                    <color key="titleColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8p-35-X7X">
+                                                <rect key="frame" x="80.5" y="502" width="214" height="47"/>
+                                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="35"/>
+                                                <state key="normal" title="Global Health">
+                                                    <color key="titleColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lnm-yp-SAS">
+                                                <rect key="frame" x="97.5" y="569" width="180" height="47"/>
+                                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="35"/>
+                                                <state key="normal" title="Humanities">
+                                                    <color key="titleColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNb-TD-t3y">
+                                                <rect key="frame" x="115.5" y="636" width="144" height="47"/>
+                                                <fontDescription key="fontDescription" name="MyriadPro-Bold" family="Myriad Pro" pointSize="35"/>
+                                                <state key="normal" title="Medicine">
+                                                    <color key="titleColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Lnm-yp-SAS" firstAttribute="centerX" secondItem="Oe4-VA-x5B" secondAttribute="centerX" id="0on-fO-2KV"/>
+                                            <constraint firstItem="Cx4-hW-26W" firstAttribute="centerX" secondItem="Oe4-VA-x5B" secondAttribute="centerX" id="5bO-5T-KZ3"/>
+                                            <constraint firstItem="tI0-fD-z1b" firstAttribute="top" secondItem="Lw3-G9-aXU" secondAttribute="bottom" constant="20" id="9ER-wo-wPU"/>
+                                            <constraint firstItem="oxJ-EX-BuG" firstAttribute="top" secondItem="dvV-9f-zee" secondAttribute="bottom" constant="20" id="9NJ-0L-Xlt"/>
+                                            <constraint firstItem="wUB-Q9-Av7" firstAttribute="centerX" secondItem="Oe4-VA-x5B" secondAttribute="centerX" id="9Qf-ki-qQU"/>
+                                            <constraint firstItem="QNb-TD-t3y" firstAttribute="top" secondItem="Lnm-yp-SAS" secondAttribute="bottom" constant="20" id="BvA-s2-yhn"/>
+                                            <constraint firstItem="wUB-Q9-Av7" firstAttribute="centerX" secondItem="Oe4-VA-x5B" secondAttribute="centerX" id="DcX-ws-a7f"/>
+                                            <constraint firstItem="QNb-TD-t3y" firstAttribute="centerX" secondItem="Oe4-VA-x5B" secondAttribute="centerX" id="Iqa-8n-K1n"/>
+                                            <constraint firstItem="dvV-9f-zee" firstAttribute="top" secondItem="wUB-Q9-Av7" secondAttribute="bottom" constant="20" id="NLC-Ke-Lvy"/>
+                                            <constraint firstItem="wUB-Q9-Av7" firstAttribute="top" secondItem="8bu-ab-lHG" secondAttribute="bottom" constant="20" id="V1c-B5-HjX"/>
+                                            <constraint firstItem="dvV-9f-zee" firstAttribute="centerX" secondItem="Oe4-VA-x5B" secondAttribute="centerX" id="VZe-ky-QbX"/>
+                                            <constraint firstItem="Lw3-G9-aXU" firstAttribute="top" secondItem="Oe4-VA-x5B" secondAttribute="top" constant="33" id="ZD8-m8-GtA"/>
+                                            <constraint firstItem="d8p-35-X7X" firstAttribute="centerX" secondItem="Oe4-VA-x5B" secondAttribute="centerX" id="Zjg-c7-iJt"/>
+                                            <constraint firstItem="Lw3-G9-aXU" firstAttribute="centerX" secondItem="Oe4-VA-x5B" secondAttribute="centerX" id="g9j-Rl-lP9"/>
+                                            <constraint firstItem="Cx4-hW-26W" firstAttribute="top" secondItem="tI0-fD-z1b" secondAttribute="bottom" constant="20" id="hLN-yi-WeG"/>
+                                            <constraint firstItem="8bu-ab-lHG" firstAttribute="top" secondItem="Cx4-hW-26W" secondAttribute="bottom" constant="20" id="ntD-dc-4WZ"/>
+                                            <constraint firstItem="d8p-35-X7X" firstAttribute="top" secondItem="oxJ-EX-BuG" secondAttribute="bottom" constant="20" id="oht-Tv-rfa"/>
+                                            <constraint firstItem="tI0-fD-z1b" firstAttribute="centerX" secondItem="Oe4-VA-x5B" secondAttribute="centerX" id="tGc-35-kdJ"/>
+                                            <constraint firstItem="oxJ-EX-BuG" firstAttribute="centerX" secondItem="Oe4-VA-x5B" secondAttribute="centerX" id="w6E-Vx-RMY"/>
+                                            <constraint firstItem="Lnm-yp-SAS" firstAttribute="top" secondItem="d8p-35-X7X" secondAttribute="bottom" constant="20" id="w6w-8I-o6a"/>
+                                            <constraint firstItem="8bu-ab-lHG" firstAttribute="centerX" secondItem="Oe4-VA-x5B" secondAttribute="centerX" id="xxK-Qp-5xV"/>
+                                            <constraint firstAttribute="height" constant="1000" id="ylo-db-87i"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Oe4-VA-x5B" firstAttribute="leading" secondItem="1b7-CZ-dJY" secondAttribute="leading" id="1hj-ge-1R6"/>
+                                    <constraint firstAttribute="trailing" secondItem="Oe4-VA-x5B" secondAttribute="trailing" id="6x6-PS-wSO"/>
+                                    <constraint firstAttribute="bottom" secondItem="Oe4-VA-x5B" secondAttribute="bottom" id="Dnp-wI-PzC"/>
+                                    <constraint firstItem="Oe4-VA-x5B" firstAttribute="top" secondItem="1b7-CZ-dJY" secondAttribute="top" id="PEr-t1-yUP"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="0iN-jH-Adf" firstAttribute="top" secondItem="Pz1-fD-2Z0" secondAttribute="top" constant="54" id="EO9-Ph-2DN"/>
+                            <constraint firstItem="3mu-jT-gj2" firstAttribute="top" secondItem="Pz1-fD-2Z0" secondAttribute="top" constant="54" id="NMa-Gi-a6G"/>
+                            <constraint firstItem="1b7-CZ-dJY" firstAttribute="top" secondItem="0iN-jH-Adf" secondAttribute="bottom" constant="8" id="dOn-41-fbE"/>
+                            <constraint firstItem="Oe4-VA-x5B" firstAttribute="width" secondItem="HyC-pY-ZCN" secondAttribute="width" id="i4k-Yd-vyX"/>
+                            <constraint firstItem="Pz1-fD-2Z0" firstAttribute="bottom" secondItem="1b7-CZ-dJY" secondAttribute="bottom" id="j5m-Zn-eAT"/>
+                            <constraint firstItem="1b7-CZ-dJY" firstAttribute="leading" secondItem="Pz1-fD-2Z0" secondAttribute="leading" id="m7B-KN-FdB"/>
+                            <constraint firstItem="1b7-CZ-dJY" firstAttribute="trailing" secondItem="Pz1-fD-2Z0" secondAttribute="trailing" id="vNb-d2-vla"/>
+                            <constraint firstItem="3mu-jT-gj2" firstAttribute="leading" secondItem="0iN-jH-Adf" secondAttribute="trailing" constant="8" id="zGV-uj-yg1"/>
+                            <constraint firstItem="0iN-jH-Adf" firstAttribute="centerX" secondItem="HyC-pY-ZCN" secondAttribute="centerX" constant="-60" id="zka-tK-V7t"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Pz1-fD-2Z0"/>
                     </view>
                     <navigationItem key="navigationItem" id="N9r-Qp-fvF"/>
-                    <connections>
-                        <outlet property="newsPicker" destination="ot4-aS-6HV" id="23M-No-ulE"/>
-                        <outlet property="newsTextField" destination="F6R-80-pjk" id="RUy-Pf-0YV"/>
-                    </connections>
+                    <size key="freeformSize" width="375" height="1000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w2O-s6-V9t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
