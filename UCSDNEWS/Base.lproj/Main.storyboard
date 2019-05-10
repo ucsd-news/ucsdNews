@@ -26,12 +26,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mu-jT-gj2">
-                                <rect key="frame" x="198.5" y="118" width="96" height="42"/>
-                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="42"/>
-                                <color key="textColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UCSD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iN-jH-Adf">
                                 <rect key="frame" x="64.5" y="118" width="126" height="50"/>
                                 <color key="tintColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -51,6 +45,9 @@
                                                 <state key="normal" title="Engineering">
                                                     <color key="titleColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="Ur8-a7-VSV" kind="show" id="PdP-Jc-PvM"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cx4-hW-26W">
                                                 <rect key="frame" x="50" y="167" width="275" height="47"/>
@@ -58,6 +55,9 @@
                                                 <state key="normal" title="Cognitive Science">
                                                     <color key="titleColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="Ur8-a7-VSV" kind="show" id="yNE-SH-j2Y"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bu-ab-lHG">
                                                 <rect key="frame" x="127.5" y="234" width="120" height="47"/>
@@ -65,6 +65,9 @@
                                                 <state key="normal" title="Biology">
                                                     <color key="titleColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="Ur8-a7-VSV" kind="show" id="ah7-CU-UC6"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUB-Q9-Av7">
                                                 <rect key="frame" x="107.5" y="301" width="160" height="47"/>
@@ -72,6 +75,9 @@
                                                 <state key="normal" title="Chemistry">
                                                     <color key="titleColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="Ur8-a7-VSV" kind="show" id="K6i-PA-zZh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvV-9f-zee">
                                                 <rect key="frame" x="142" y="368" width="91" height="47"/>
@@ -79,6 +85,9 @@
                                                 <state key="normal" title="Music">
                                                     <color key="titleColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="Ur8-a7-VSV" kind="show" id="6xX-uL-U7d"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxJ-EX-BuG">
                                                 <rect key="frame" x="86.5" y="435" width="202" height="47"/>
@@ -86,6 +95,9 @@
                                                 <state key="normal" title="Mathematics">
                                                     <color key="titleColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="Ur8-a7-VSV" kind="show" id="Rsp-g2-S0K"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lw3-G9-aXU">
                                                 <rect key="frame" x="45" y="33" width="285" height="47"/>
@@ -93,6 +105,9 @@
                                                 <state key="normal" title="Computer-Science">
                                                     <color key="titleColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="Ur8-a7-VSV" kind="show" id="7Qk-Km-jOR"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8p-35-X7X">
                                                 <rect key="frame" x="80.5" y="502" width="214" height="47"/>
@@ -100,6 +115,9 @@
                                                 <state key="normal" title="Global Health">
                                                     <color key="titleColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="Ur8-a7-VSV" kind="show" id="WTo-Ob-WkS"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lnm-yp-SAS">
                                                 <rect key="frame" x="97.5" y="569" width="180" height="47"/>
@@ -107,6 +125,9 @@
                                                 <state key="normal" title="Humanities">
                                                     <color key="titleColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="Ur8-a7-VSV" kind="show" id="Sk3-h0-LZQ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNb-TD-t3y">
                                                 <rect key="frame" x="115.5" y="636" width="144" height="47"/>
@@ -114,6 +135,9 @@
                                                 <state key="normal" title="Medicine">
                                                     <color key="titleColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="Ur8-a7-VSV" kind="show" id="dwh-n0-iZu"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -150,12 +174,18 @@
                                     <constraint firstItem="Oe4-VA-x5B" firstAttribute="top" secondItem="1b7-CZ-dJY" secondAttribute="top" id="PEr-t1-yUP"/>
                                 </constraints>
                             </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mu-jT-gj2">
+                                <rect key="frame" x="198.5" y="122" width="96" height="42"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="42"/>
+                                <color key="textColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0039215686269999999" green="0.17254901959999999" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="0iN-jH-Adf" firstAttribute="top" secondItem="Pz1-fD-2Z0" secondAttribute="top" constant="54" id="EO9-Ph-2DN"/>
-                            <constraint firstItem="3mu-jT-gj2" firstAttribute="top" secondItem="Pz1-fD-2Z0" secondAttribute="top" constant="54" id="NMa-Gi-a6G"/>
+                            <constraint firstItem="3mu-jT-gj2" firstAttribute="top" secondItem="Pz1-fD-2Z0" secondAttribute="top" constant="58" id="NMa-Gi-a6G"/>
                             <constraint firstItem="1b7-CZ-dJY" firstAttribute="top" secondItem="0iN-jH-Adf" secondAttribute="bottom" constant="8" id="dOn-41-fbE"/>
                             <constraint firstItem="Oe4-VA-x5B" firstAttribute="width" secondItem="HyC-pY-ZCN" secondAttribute="width" id="i4k-Yd-vyX"/>
                             <constraint firstItem="Pz1-fD-2Z0" firstAttribute="bottom" secondItem="1b7-CZ-dJY" secondAttribute="bottom" id="j5m-Zn-eAT"/>
@@ -168,10 +198,37 @@
                     </view>
                     <navigationItem key="navigationItem" id="N9r-Qp-fvF"/>
                     <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="biologyButton" destination="8bu-ab-lHG" id="p5h-UU-qzK"/>
+                        <outlet property="chemButton" destination="wUB-Q9-Av7" id="h2P-S5-mYg"/>
+                        <outlet property="cogsciButton" destination="Cx4-hW-26W" id="krt-60-P27"/>
+                        <outlet property="csButton" destination="Lw3-G9-aXU" id="Qnr-kA-HPT"/>
+                        <outlet property="engineeringButton" destination="tI0-fD-z1b" id="Rvp-ze-H6F"/>
+                        <outlet property="healthButton" destination="d8p-35-X7X" id="Cdm-GD-2gK"/>
+                        <outlet property="humanitiesButton" destination="Lnm-yp-SAS" id="4eN-W4-bsT"/>
+                        <outlet property="mathButton" destination="oxJ-EX-BuG" id="dlh-il-8XX"/>
+                        <outlet property="medButton" destination="QNb-TD-t3y" id="H2G-k1-hz6"/>
+                        <outlet property="musicButton" destination="dvV-9f-zee" id="hEF-bK-gFF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w2O-s6-V9t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1087.2" y="134.48275862068968"/>
+        </scene>
+        <!--News View Controller-->
+        <scene sceneID="ki2-TF-x6O">
+            <objects>
+                <viewController id="Ur8-a7-VSV" customClass="newsViewController" customModule="UCSDNEWS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mZU-xM-PXB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="g5W-Ac-1x4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zI9-cZ-rJd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1985" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vdn-cY-TBJ">
@@ -192,4 +249,7 @@
             <point key="canvasLocation" x="148" y="134.48275862068968"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dwh-n0-iZu"/>
+    </inferredMetricsTieBreakers>
 </document>
