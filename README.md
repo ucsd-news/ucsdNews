@@ -5,6 +5,7 @@
 2. [Product Spec](#Product-Spec)
 3. [Wireframes](#Wireframes)
 4. [Schema](#Schema)
+5. [Progress Gifs](#Progress-Gifs)
 
 ## Overview
 ### Description
@@ -89,7 +90,7 @@ Through this app, users will be able to see various news articles about what is 
    | `GET`    | /top-headlines?q=keyword | returns top headlines with keyword |
 
 
-## Progress Reports:
+## Progress Gifs:
 
 ### Milestone 1 - 6 May 2019
 
