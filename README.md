@@ -2,9 +2,9 @@
 
 ## Table of Contents
 1. [Overview](#Overview)
-1. [Product Spec](#Product-Spec)
-1. [Wireframes](#Wireframes)
-2. [Schema](#Schema)
+2. [Product Spec](#Product-Spec)
+3. [Wireframes](#Wireframes)
+4. [Schema](#Schema)
 
 ## Overview
 ### Description
@@ -25,16 +25,16 @@ Through this app, users will be able to see various news articles about what is 
 
 **Required Must-have Stories**
 
-* User can view list of popular news articles featuring UCSD 
-* User can choose to filter stories based on department
-* User can tap on a news article to view full story
+- [ ] User can view list of popular news articles featuring UCSD 
+- [X] User can choose to filter stories based on department
+- [ ] User can tap on a news article to view full story
 
 
 **Optional Nice-to-have Stories**
 
-* User can choose to view news from other UC's
-* User can receive notifications when new stories are added
-* User can save stories
+- [ ] User can choose to view news from other UC's
+- [ ] User can receive notifications when new stories are added
+- [ ] User can save stories
 
 
 ### 2. Screen Archetypes
@@ -89,13 +89,23 @@ Through this app, users will be able to see various news articles about what is 
    | `GET`    | /top-headlines?q=keyword | returns top headlines with keyword |
 
 
+## Progress Reports:
 
-### Milestone 1
+### Milestone 1 - 6 May 2019
 
-[X] Created spinner object
+
+- [X] Initialized repo 
+- [X] Created spinner object
 
 
 <img src="https://imgur.com/jYjqrCY.gif" width=400>
 
 
+### Milestone 2 - 13 May 2019
 
+- [X] Created Launch Screen
+- [X] Created App Icon
+- [X] Created Home Screen
+- [X] Configured autolayout
+
+<img src="https://imgur.com/czvVOnA.gif" width=400>
