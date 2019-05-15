@@ -18,12 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="UCSD_logo" translatesAutoresizingMaskIntoConstraints="NO" id="6LI-Nf-Ry5">
-                                <rect key="frame" x="-47" y="-56" width="468" height="584"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="UCSD_logo" translatesAutoresizingMaskIntoConstraints="NO" id="6LI-Nf-Ry5">
+                                <rect key="frame" x="-39.5" y="78.5" width="454" height="410"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="410" id="2hC-OC-V4i"/>
+                                    <constraint firstAttribute="width" constant="454" id="a1i-it-gNH"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99607843139999996" green="0.75294117650000003" blue="0.08235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6LI-Nf-Ry5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Akx-dy-YbV"/>
+                            <constraint firstItem="6LI-Nf-Ry5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-50" id="lXG-ZN-RuP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
