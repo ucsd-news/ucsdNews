@@ -20,6 +20,7 @@
 		6C32864722858C67004CBF82 /* newsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C32864622858C67004CBF82 /* newsViewController.swift */; };
 		6C66E86C01D61D44504BA961 /* Pods_UCSDNEWSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C85154928DB064353005B80 /* Pods_UCSDNEWSTests.framework */; };
 		7C22E16250D6527E3E7D87A0 /* Pods_UCSDNEWSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A34753A4AEFA94D8C848EC8 /* Pods_UCSDNEWSUITests.framework */; };
+		BAFE08C343ABD4D255587D27 /* Pods_UCSDNEWS_UCSDNEWSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B05EEA470B914B50EC8FD6 /* Pods_UCSDNEWS_UCSDNEWSTests.framework */; };
 		BD03AD4B19A0DAC22B40CF29 /* Pods_UCSDNEWS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417D2BB3409EF7A6F8A42539 /* Pods_UCSDNEWS.framework */; };
 		EE0A53E1227E64A6000507CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0A53E0227E64A6000507CC /* AppDelegate.swift */; };
 		EE0A53E6227E64A6000507CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0A53E4227E64A6000507CC /* Main.storyboard */; };
@@ -67,6 +68,9 @@
 		6C32864622858C67004CBF82 /* newsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsViewController.swift; sourceTree = "<group>"; };
 		7466E45BE8E0816CD6143B64 /* Pods-UCSDNEWSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCSDNEWSTests.debug.xcconfig"; path = "Target Support Files/Pods-UCSDNEWSTests/Pods-UCSDNEWSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C0940228234E4782B16AFFE /* Pods-UCSDNEWSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCSDNEWSUITests.release.xcconfig"; path = "Target Support Files/Pods-UCSDNEWSUITests/Pods-UCSDNEWSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A4B05EEA470B914B50EC8FD6 /* Pods_UCSDNEWS_UCSDNEWSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UCSDNEWS_UCSDNEWSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3803427856C8069B161F8EF /* Pods-UCSDNEWS-UCSDNEWSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCSDNEWS-UCSDNEWSTests.debug.xcconfig"; path = "Target Support Files/Pods-UCSDNEWS-UCSDNEWSTests/Pods-UCSDNEWS-UCSDNEWSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DCC80397FD769C29944E8FE9 /* Pods-UCSDNEWS-UCSDNEWSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCSDNEWS-UCSDNEWSTests.release.xcconfig"; path = "Target Support Files/Pods-UCSDNEWS-UCSDNEWSTests/Pods-UCSDNEWS-UCSDNEWSTests.release.xcconfig"; sourceTree = "<group>"; };
 		EE0A53DD227E64A6000507CC /* UCSDNEWS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCSDNEWS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0A53E0227E64A6000507CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE0A53E5227E64A6000507CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C66E86C01D61D44504BA961 /* Pods_UCSDNEWSTests.framework in Frameworks */,
+				BAFE08C343ABD4D255587D27 /* Pods_UCSDNEWS_UCSDNEWSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +125,8 @@
 				01996829C39CF1636110226B /* Pods-UCSDNEWSTests.release.xcconfig */,
 				693440B1BB5874596A7FE8E7 /* Pods-UCSDNEWSUITests.debug.xcconfig */,
 				9C0940228234E4782B16AFFE /* Pods-UCSDNEWSUITests.release.xcconfig */,
+				C3803427856C8069B161F8EF /* Pods-UCSDNEWS-UCSDNEWSTests.debug.xcconfig */,
+				DCC80397FD769C29944E8FE9 /* Pods-UCSDNEWS-UCSDNEWSTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -147,6 +154,7 @@
 				417D2BB3409EF7A6F8A42539 /* Pods_UCSDNEWS.framework */,
 				4C85154928DB064353005B80 /* Pods_UCSDNEWSTests.framework */,
 				6A34753A4AEFA94D8C848EC8 /* Pods_UCSDNEWSUITests.framework */,
+				A4B05EEA470B914B50EC8FD6 /* Pods_UCSDNEWS_UCSDNEWSTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -217,7 +225,6 @@
 				EE0A53D9227E64A6000507CC /* Sources */,
 				EE0A53DA227E64A6000507CC /* Frameworks */,
 				EE0A53DB227E64A6000507CC /* Resources */,
-				64196F57BC6137D408CB8CB7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,6 +243,7 @@
 				EE0A53ED227E64AA000507CC /* Sources */,
 				EE0A53EE227E64AA000507CC /* Frameworks */,
 				EE0A53EF227E64AA000507CC /* Resources */,
+				8E0B1F8560C0C23F2A32E568 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -390,7 +398,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		64196F57BC6137D408CB8CB7 /* [CP] Embed Pods Frameworks */ = {
+		8E0B1F8560C0C23F2A32E568 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -398,24 +406,18 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-UCSDNEWS/Pods-UCSDNEWS-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-UCSDNEWS-UCSDNEWSTests/Pods-UCSDNEWS-UCSDNEWSTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/NewsAPISwift/NewsAPISwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Pastel/Pastel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NewsAPISwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pastel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UCSDNEWS/Pods-UCSDNEWS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UCSDNEWS-UCSDNEWSTests/Pods-UCSDNEWS-UCSDNEWSTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A429DAC03F27492C8838EB56 /* [CP] Check Pods Manifest.lock */ = {
@@ -433,7 +435,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-UCSDNEWSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-UCSDNEWS-UCSDNEWSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -658,7 +660,7 @@
 		};
 		EE0A5409227E64AA000507CC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7466E45BE8E0816CD6143B64 /* Pods-UCSDNEWSTests.debug.xcconfig */;
+			baseConfigurationReference = C3803427856C8069B161F8EF /* Pods-UCSDNEWS-UCSDNEWSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -679,7 +681,7 @@
 		};
 		EE0A540A227E64AA000507CC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01996829C39CF1636110226B /* Pods-UCSDNEWSTests.release.xcconfig */;
+			baseConfigurationReference = DCC80397FD769C29944E8FE9 /* Pods-UCSDNEWS-UCSDNEWSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

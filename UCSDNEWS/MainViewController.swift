@@ -40,6 +40,7 @@ class MainViewController: UIViewController {
         
         let newsVC = segue.destination as! newsViewController
         newsVC.keyword = keyword
+        newsVC.title = keyword
     }
     
 
