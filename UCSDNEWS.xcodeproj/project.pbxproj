@@ -29,6 +29,7 @@
 		EE0A53F6227E64AA000507CC /* UCSDNEWSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0A53F5227E64AA000507CC /* UCSDNEWSTests.swift */; };
 		EE0A5401227E64AA000507CC /* UCSDNEWSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0A5400227E64AA000507CC /* UCSDNEWSUITests.swift */; };
 		EE0A540F227E7046000507CC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0A540E227E7046000507CC /* MainViewController.swift */; };
+		EE445B7F228BA71900259754 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE445B7E228BA71900259754 /* NewsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		EE0A5400227E64AA000507CC /* UCSDNEWSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCSDNEWSUITests.swift; sourceTree = "<group>"; };
 		EE0A5402227E64AA000507CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE0A540E227E7046000507CC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EE445B7E228BA71900259754 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		F872845748E56B1791A20CCD /* Pods-UCSDNEWS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCSDNEWS.debug.xcconfig"; path = "Target Support Files/Pods-UCSDNEWS/Pods-UCSDNEWS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,6 +194,7 @@
 				EE0A53E9227E64A9000507CC /* LaunchScreen.storyboard */,
 				EE0A53EC227E64A9000507CC /* Info.plist */,
 				EE0A540E227E7046000507CC /* MainViewController.swift */,
+				EE445B7E228BA71900259754 /* NewsTableViewCell.swift */,
 			);
 			path = UCSDNEWS;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 			files = (
 				EE0A53E1227E64A6000507CC /* AppDelegate.swift in Sources */,
 				EE0A540F227E7046000507CC /* MainViewController.swift in Sources */,
+				EE445B7F228BA71900259754 /* NewsTableViewCell.swift in Sources */,
 				6C32864722858C67004CBF82 /* newsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

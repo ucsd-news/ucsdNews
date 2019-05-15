@@ -7,17 +7,32 @@
 
 import UIKit
 
-class newsViewController: UIViewController {
+class newsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
 
     var keyword: String!
+    @IBOutlet weak var newsTableView: UITableView!
     
     override func viewDidLoad() {
+        
+        newsTableView.delegate = self
+        newsTableView.dataSource = self
         
         print(keyword)
         
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+         let cell = newsTableView.dequeueReusableCell(withIdentifier: "newsTableCell") as! NewsTableViewCell
+        
+        return cell
     }
     
 
