@@ -110,3 +110,12 @@ Through this app, users will be able to see various news articles about what is 
 - [X] Configured autolayout
 
 <img src="https://imgur.com/czvVOnA.gif" width=400>
+
+
+### Milestone 3 - 20 May 2019
+
+- [X] Configured Table View
+- [X] Successfully created API calls
+- [X] populated Table View Cells with information from API calls
+
+<img src="https://imgur.com/i6gbsTO.gif" width=400>
