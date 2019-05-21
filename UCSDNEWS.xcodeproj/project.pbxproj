@@ -247,7 +247,6 @@
 				EE0A53ED227E64AA000507CC /* Sources */,
 				EE0A53EE227E64AA000507CC /* Frameworks */,
 				EE0A53EF227E64AA000507CC /* Resources */,
-				8E0B1F8560C0C23F2A32E568 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -413,7 +412,6 @@
 				"${PODS_ROOT}/Target Support Files/Pods-UCSDNEWS/Pods-UCSDNEWS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
-				"${BUILT_PRODUCTS_DIR}/NewsAPISwift/NewsAPISwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -421,37 +419,10 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NewsAPISwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UCSDNEWS/Pods-UCSDNEWS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8E0B1F8560C0C23F2A32E568 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-UCSDNEWS-UCSDNEWSTests/Pods-UCSDNEWS-UCSDNEWSTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
-				"${BUILT_PRODUCTS_DIR}/NewsAPISwift/NewsAPISwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NewsAPISwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UCSDNEWS-UCSDNEWSTests/Pods-UCSDNEWS-UCSDNEWSTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A429DAC03F27492C8838EB56 /* [CP] Check Pods Manifest.lock */ = {
@@ -469,7 +440,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-UCSDNEWS-UCSDNEWSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-UCSDNEWSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -695,7 +666,7 @@
 		};
 		EE0A5409227E64AA000507CC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3803427856C8069B161F8EF /* Pods-UCSDNEWS-UCSDNEWSTests.debug.xcconfig */;
+			baseConfigurationReference = 7466E45BE8E0816CD6143B64 /* Pods-UCSDNEWSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -716,7 +687,7 @@
 		};
 		EE0A540A227E64AA000507CC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCC80397FD769C29944E8FE9 /* Pods-UCSDNEWS-UCSDNEWSTests.release.xcconfig */;
+			baseConfigurationReference = 01996829C39CF1636110226B /* Pods-UCSDNEWSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

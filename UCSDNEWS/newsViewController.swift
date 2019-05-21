@@ -13,7 +13,7 @@ class newsViewController: UIViewController, UITableViewDelegate, UITableViewData
   
     
     var keyword: String!
-    let UCSDKeyword = "UCSD+"
+    let UCSDKeyword = "UC+San+Diego+"
     
     var articles = [[String: Any]]()
     
@@ -21,11 +21,13 @@ class newsViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         
+        super.viewDidLoad()
+        print(keyword)
         newsTableView.delegate = self
         newsTableView.dataSource = self
         
         let url = URL(string: "https://newsapi.org/v2/everything?q=" + UCSDKeyword + keyword + "&apiKey=a16776c507fb498e9e86e14e94659d54")!
-        print(url)
+        
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
         let task = session.dataTask(with: request) { (data, response, error) in
@@ -34,9 +36,7 @@ class newsViewController: UIViewController, UITableViewDelegate, UITableViewData
                 print(error.localizedDescription)
             } else if let data = data {
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
-                print(dataDictionary)
                 self.articles = dataDictionary["articles"] as! [[String:Any]]
-                print(self.articles)
                 self.newsTableView.reloadData()
                 
                 
@@ -48,18 +48,12 @@ class newsViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         task.resume()
         
-        
-        print(articles)
-        
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return articles.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -68,18 +62,20 @@ class newsViewController: UIViewController, UITableViewDelegate, UITableViewData
         let article = articles[indexPath.row]
         let title = article["title"] as! String
         
-        let sypnosis = article["description"] as! String
+        let description = article["description"] as! String
         let url = article["url"] as! String
-        let urlImage = article["urlImage"] as! String
+        print(description)
+        let urlImage = article["urlToImage"] as? String
         
         
         cell.webTitle!.text = title
-        cell.webSummary!.text = sypnosis
+        cell.webSummary!.text = description
         cell.hyperlinkLabel!.text = url
         
-        let imageURL = URL(string: urlImage)!
-        
+        if (urlImage != nil) {
+            let imageURL = URL(string: urlImage!)!
         cell.webImageView.af_setImage(withURL: imageURL)
+        }
         return cell
     }
     

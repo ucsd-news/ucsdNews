@@ -36,7 +36,15 @@ class MainViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let button = sender as! UIButton
-        let keyword = button.titleLabel!.text
+        var keyword = button.titleLabel!.text
+        
+        if (keyword == "Global Health") {
+            keyword = "Global+Health"
+        }
+        
+        if (keyword == "Cognitive Science") {
+            keyword = "Cognitive+Science"
+        }
         
         let newsVC = segue.destination as! newsViewController
         newsVC.keyword = keyword
