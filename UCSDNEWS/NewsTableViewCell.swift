@@ -9,10 +9,10 @@ import UIKit
 
 class NewsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var websiteName: UILabel!
     @IBOutlet weak var webImageView: UIImageView!
     @IBOutlet weak var webTitle: UILabel!
     @IBOutlet weak var webSummary: UILabel!
-    @IBOutlet weak var hyperlinkLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

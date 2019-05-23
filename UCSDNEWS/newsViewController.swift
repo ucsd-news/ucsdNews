@@ -22,7 +22,6 @@ class newsViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        print(keyword)
         newsTableView.delegate = self
         newsTableView.dataSource = self
         
@@ -37,6 +36,7 @@ class newsViewController: UIViewController, UITableViewDelegate, UITableViewData
             } else if let data = data {
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                 self.articles = dataDictionary["articles"] as! [[String:Any]]
+                
                 self.newsTableView.reloadData()
                 
                 
@@ -61,16 +61,13 @@ class newsViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let article = articles[indexPath.row]
         let title = article["title"] as! String
-        
-        let description = article["description"] as! String
-        let url = article["url"] as! String
-        print(description)
+        let url = article["url"] as? String
+        let description = article["description"] as? String
         let urlImage = article["urlToImage"] as? String
         
         
         cell.webTitle!.text = title
         cell.webSummary!.text = description
-        cell.hyperlinkLabel!.text = url
         
         if (urlImage != nil) {
             let imageURL = URL(string: urlImage!)!
