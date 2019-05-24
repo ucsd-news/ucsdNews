@@ -46,9 +46,7 @@ class MainViewController: UIViewController {
             keyword = "Cognitive+Science"
         }
         
-        if (keyword == "Global Health") {
-            keyword == "Global+Health" 
-        }
+
         
         let newsVC = segue.destination as! newsViewController
         newsVC.keyword = keyword

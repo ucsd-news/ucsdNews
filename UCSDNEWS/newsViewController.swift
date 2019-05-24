@@ -61,7 +61,6 @@ class newsViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let article = articles[indexPath.row]
         let title = article["title"] as! String
-        let url = article["url"] as? String
         let description = article["description"] as? String
         let urlImage = article["urlToImage"] as? String
         
@@ -77,14 +76,18 @@ class newsViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        let cell = sender as! UITableViewCell
+        let indexPath = newsTableView.indexPath(for: cell)!
+        let article = articles[indexPath.row]
+        let url = article["url"] as! String
+        let webViewController = segue.destination as! WebPageViewController
+        webViewController.url = url
+        
+      
     }
-    */
+    
 
 }
