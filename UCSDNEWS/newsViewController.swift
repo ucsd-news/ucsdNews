@@ -22,6 +22,8 @@ class newsViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        
         newsTableView.delegate = self
         newsTableView.dataSource = self
         
@@ -59,6 +61,8 @@ class newsViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          let cell = newsTableView.dequeueReusableCell(withIdentifier: "newsTableCell") as! NewsTableViewCell
         
+        cell.webImageView.layer.cornerRadius = 20
+        
         let article = articles[indexPath.row]
         let title = article["title"] as! String
         let description = article["description"] as? String
@@ -85,6 +89,7 @@ class newsViewController: UIViewController, UITableViewDelegate, UITableViewData
         let url = article["url"] as! String
         let webViewController = segue.destination as! WebPageViewController
         webViewController.url = url
+        newsTableView.deselectRow(at: indexPath, animated: true)
         
       
     }
