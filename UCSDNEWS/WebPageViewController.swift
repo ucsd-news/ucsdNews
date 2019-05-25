@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-class WebPageViewController: UIViewController {
+class WebPageViewController: UIViewController, WKUIDelegate {
 
     
     var url: String!
