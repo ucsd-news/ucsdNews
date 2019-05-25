@@ -28,7 +28,7 @@ Through this app, users will be able to see various news articles about what is 
 
 - [X] User can view list of popular news articles featuring UCSD 
 - [X] User can choose to filter stories based on department
-- [ ] User can tap on a news article to view full story
+- [X] User can tap on a news article to view full story
 
 
 **Optional Nice-to-have Stories**
@@ -119,3 +119,12 @@ Through this app, users will be able to see various news articles about what is 
 - [X] populated Table View Cells with information from API calls
 
 <img src="https://imgur.com/i6gbsTO.gif" width=400>
+
+
+### Milestone 4 - 26 May 2019 - Finished Product
+
+- [X] Implemented Webview
+- [X] Configured autolayout for a consistent experience across devices
+- [X] Finished visual design of app
+
+<img src="https://i.imgur.com/Xa8OnNE.gif" width=400>
