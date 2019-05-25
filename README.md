@@ -127,4 +127,4 @@ Through this app, users will be able to see various news articles about what is 
 - [X] Configured autolayout for a consistent experience across devices
 - [X] Finished visual design of app
 
-<img src="https://i.imgur.com/Xa8OnNE.gif" width=400>
+<img src= "http://recordit.co/0NLgRT8JyK.gif" width=400>
